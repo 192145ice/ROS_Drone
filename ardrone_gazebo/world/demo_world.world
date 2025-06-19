@@ -1,0 +1,49 @@
+	<?xml version="1.0"?>
+
+	<sdf version="1.5">
+		<world name="default">
+
+			<!-- 基礎地面 -->
+			<include>
+				<uri>model://ground_plane</uri>
+			</include>
+
+			<!-- 球場 -->
+			<include>
+				<uri>model://robocup_3Dsim_field</uri>
+				<pose>0 0 0 0 0 0</pose>
+			</include>
+
+			<!-- person-->
+			<include>
+				<uri>model://person_standing</uri>
+				<pose>3 3 0 0 0 0</pose>  
+			</include>
+
+			<include>
+				<uri>model://Walking person</uri>
+				<pose>3 4 0 0 0 0</pose>
+			</include>
+
+			<!-- bus-->
+			<include>
+				<uri>model://bus</uri>
+				<pose>-3 -3 0 0 0 0</pose>  
+			</include>
+
+			<include>
+				<uri>model://Chair</uri>
+				<pose>3 5 0 0 0 0</pose>  
+			</include>
+
+			<include>
+				<uri>model://bicycle</uri>
+				<pose>3 1 0 0 0 0</pose>  
+			</include>
+
+			<include>
+				<uri>model://RoboCup 3D Simulation Ball</uri>
+				<pose>3 -1 0 0 0 0</pose>  
+			</include>
+		</world>
+	</sdf>
