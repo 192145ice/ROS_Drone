@@ -1,14 +1,27 @@
-# 🛸 Ardrone YOLOv8 ROS Integration
+#  Ardrone YOLOv8 ROS Integration
 
-本專案整合 YOLOv8 與 ROS Gazebo 模擬器，實現無人機在模擬環境中即時物件辨識功能和飛行功能。
+本專案使用 ROS 與 Gazebo 模擬環境，
+實現無人機飛行控制與即時影像辨識整合。
+
+透過 Python ROS 節點控制 Ardrone 起飛、降落與移動，
+並使用 YOLOv8 進行即時物件偵測，
+使無人機在模擬環境中具備視覺辨識能力。
+
+主要功能：
+
+- 無人機起飛 / 降落 / 移動控制
+- YOLOv8 即時影像辨識
+- ROS 節點控制與影像串流
+- Gazebo 模擬飛行環境
+- 視覺與控制整合測試
 
 <h3>Demo Video</h3>
-
 <a href="https://youtu.be/_suGHQZ1J5k">
   <img src="https://img.youtube.com/vi/_suGHQZ1J5k/0.jpg" width="600">
 </a>
+<h3>click me!</h3>
 
-## 📦 安裝需求
+##  安裝需求
 
 ### 系統環境
 - Ubuntu 20.04 / 22.04
@@ -23,7 +36,7 @@
 ```bash
 pip install ultralytics opencv-python cv_bridge numpy
 ```
-## 🚀 使用方式
+##  使用方式
 
 ### 1️⃣ 將檔案放入工作區裡
 ```bash
@@ -55,7 +68,7 @@ rosrun ardrone_gazebo yolo_detector.py
 ```
 畫面會顯示即時影像與物件偵測框與標籤
 
-## 📁 專案架構說明
+##  專案架構說明
 
 ```bash
 ardrone_gazebo/
